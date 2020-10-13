@@ -17,6 +17,17 @@
     <% end %>
   </footer>
 
+  <%# Add in a conditional to check if product is sold out or not %>
+    <%if product.quantity > 0%>
+    <aside class="price">
+      <%= humanized_money_with_symbol product.price %>
+    </aside>
+  <%else%>
+    <aside class="out-of-stock">
+      SOLD OUT!
+    </aside>
+  <%end%>
+
   <aside class="price">
     <%= humanized_money_with_symbol product.price %>
   </aside>
