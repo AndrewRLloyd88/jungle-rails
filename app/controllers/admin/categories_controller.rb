@@ -1,9 +1,10 @@
-#Set up a new controller for admin/categories using admin/products as an example
-class Admin::CategoriesController < ApplicationController
+# frozen_string_literal: true
 
-  http_basic_authenticate_with name: ENV["HTTP_BASIC_USER"],
-                               password: ENV["HTTP_BASIC_PASSWORD"],
-                               if: -> { ENV["HTTP_BASIC_PASSWORD"].present? }
+# Set up a new controller for admin/categories using admin/products example
+class Admin::CategoriesController < ApplicationController
+  http_basic_authenticate_with name: ENV['HTTP_BASIC_USER'],
+                               password: ENV['HTTP_BASIC_PASSWORD'],
+                               if: -> { ENV['HTTP_BASIC_PASSWORD'].present? }
 
   def index
     @categories = Category.order(id: :asc).all
@@ -17,7 +18,7 @@ class Admin::CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
-      redirect_to [:admin, :categories], notice: 'Succesfully Created Category!'
+      redirect_to %i[admin categories], notice: 'Succesfully Created Category!'
     else
       render :new
     end
