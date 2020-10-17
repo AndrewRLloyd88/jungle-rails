@@ -22,6 +22,9 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
     #Define new Categories route
     resources :categories, except: [:edit, :update, :show]
+    # clearing first EDD error making an endpoint to sales
+    # Solve our next EDD error by making :new available
+    resources :sales, only: [:index, :new]
   end
 
   resources :users, only: [:create, :new]
