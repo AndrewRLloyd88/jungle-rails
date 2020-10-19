@@ -5,9 +5,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_email(params[:email])
     # Does an existing user put in the correct password?
-    if user && user.authenticate(params[:password])
+    if user = User.authenticate_with_credentials(params[:email], params[:password])
       # We save the user information in a browser cookie
       # user remains logged in as they navigate page to page
       session[:user_id] = user.id
