@@ -2,6 +2,19 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Features
+
+!["Main Interface"](docs\Selection_131.png)
+
+!["Main Interface"](docs\ordertotal.png)
+
+!["Product Demo"](docs\ProductDemo.gif)
+
+!["Admin Area"](docs\Selection_135.png)
+
+!["Products Page"](docs\capybara-202010201428408688992070.png)
+
+!["Product Page"](tmp\capybara\capybara-202010201453161535238150.png)
 
 ## Setup
 
@@ -22,6 +35,12 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL ^9.x
+- Stripe
+
+## Contact
+
+Questions? Comments? Please get in touch via email <andrew.lloyd01@googlemail.com>
+
+README: Last updated October 20, 2020
