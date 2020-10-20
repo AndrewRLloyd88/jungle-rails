@@ -4,17 +4,17 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Features
 
-!["Main Interface"](docs\Selection_131.png)
+!["Main Interface"](docs/Selection_131.png)
 
-!["Main Interface"](docs\ordertotal.png)
+!["Main Interface"](docs/ordertotal.png)
 
-!["Product Demo"](docs\ProductDemo.gif)
+!["Product Demo"](docs/ProductDemo.gif)
 
-!["Admin Area"](docs\Selection_135.png)
+!["Admin Area"](docs/Selection_135.png)
 
-!["Products Page"](docs\capybara-202010201428408688992070.png)
+!["Products Page"](docs.capybara-202010201428408688992070.png)
 
-!["Product Page"](docs\capybara-202010201453161535238150.png)
+!["Product Page"](docs/capybara-202010201453161535238150.png)
 
 ## Setup
 
