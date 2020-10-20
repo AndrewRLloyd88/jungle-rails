@@ -14,7 +14,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 !["Products Page"](docs\capybara-202010201428408688992070.png)
 
-!["Product Page"](tmp\capybara\capybara-202010201453161535238150.png)
+!["Product Page"](docs\capybara-202010201453161535238150.png)
 
 ## Setup
 
