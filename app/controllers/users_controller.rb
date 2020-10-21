@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       #redirect after login
       redirect_to '/'
     else
-      redirect_to '/signup'
+      redirect_to '/users/new'
     end
   end
 
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
 # E-mail
 # Password
 
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     #Once a user registers an account successfully, they should also be logged in at that time. In other words, they should not have to log in after registering.
   end
 
