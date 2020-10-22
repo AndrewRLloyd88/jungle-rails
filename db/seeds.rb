@@ -132,5 +132,31 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## USERS
+User.create!(first_name: "John", last_name: "Smith", email: "john@gmail.com", password: "this_is_a_weak_password", password_confirmation: "this_is_a_weak_password")
+
+## REVIEWS
+prod1 = Product.find_by! id: 1
+user1 = User.find_by! email: "john@gmail.com"
+prod1.reviews.create!({
+  description: "I love this product!",
+  rating: 3,
+  user_id: user1.id
+})
+
+## SALES
+Sale.create!(name: "Haloween Spooktacular", percent_off: 20, starts_on: "Oct 20, 2020", ends_on: "Nov 1, 2020")
+
+## USERS
+User.create!(first_name: "Joe", last_name: "Bloggs", email: "joe@gmail.com", password: "theis_is_a_weak_password", password_confirmation: "theis_is_a_weak_password")
+## REVIEWS
+prod1 = Product.find_by! id: 1
+user1 = User.find_by! email: "john@gmail.com"
+prod1.reviews.create!({
+  description: "I love this product!",
+  rating: 3,
+  user_id: user1.id
+})
+
 
 puts "DONE!"
